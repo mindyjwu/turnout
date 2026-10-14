@@ -5,7 +5,7 @@
 **Live demo:** https://mindy-portfolio.vercel.app/turnout.html
 Part of [Mindy's portfolio](https://mindy-portfolio.vercel.app).
 
-> Demo build. Everything runs in the browser and saves to `localStorage`. There is no backend yet, no accounts, and no API calls. The other members you see are simulated.
+> The **sample circle** runs entirely in your browser (saved to `localStorage`, simulated members, no API calls). An optional **cloud layer** (Supabase) adds email sign-in, real circles with invite links and owner approval, and a server-run rotation, party planning, RSVP, rating and points. It is only active when you sign in; see [`docs/backend.md`](docs/backend.md).
 
 ## Why
 
@@ -42,7 +42,7 @@ python3 -m http.server 8080   # then open http://localhost:8080
 
 ## Roadmap
 
-See [`docs/backend.md`](docs/backend.md) and [`docs/schema.sql`](docs/schema.sql): Supabase (Postgres, phone login, row-level security), server-side rotation, points and matching, invite links with owner approval, and safety features before strangers meet at homes.
+See [`docs/backend.md`](docs/backend.md) and [`docs/schema.sql`](docs/schema.sql): phone sign-in, moving matching fully server-side so members' answers stay private, live updates, and safety features (report and block, address reveal) before strangers meet at homes.
 
 First-month goals: at least four communities created, each hosting at least one party, and 100 sign-ups or installs.
 
